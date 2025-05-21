@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 User Registration Form
 
-## Getting Started
+This project is a user registration form built using **Next.js**, **react-hook-form**, and **Yup** for form validation. It demonstrates modern form handling practices with client-side validation and clean UI design using CSS Modules.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 13+ (App Router)**
+- **React Hook Form** – form state management
+- **Yup** – schema-based validation
+- **Axios** – HTTP request library
+- **CSS Modules** – scoped component styling
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Features
 
-## Learn More
+- Fully validated registration form
+- Clean, modern UI with hover and focus states
+- Form data submission to JSONPlaceholder API
+- Per-field error messaging
+- Responsive and accessible layout
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Validation Rules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Field          | Validation                                                                      |
+| -------------- | ------------------------------------------------------------------------------- |
+| **First Name** | Required, 4–20 characters                                                       |
+| **Last Name**  | Required, 4–20 characters                                                       |
+| **Age**        | Required, number between 13–120                                                 |
+| **Email**      | Required, must be in valid email format                                         |
+| **Password**   | Required, 6–12 characters, includes at least 1 uppercase, 1 lowercase, 1 number |
+| **Phone**      | Required, only digits, 10–100 characters                                        |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📡 API Endpoint
